@@ -22,6 +22,7 @@ services:
       - ./schemas:/opt/nodecg/bundles/iss2-layouts/schemas:ro
       - ./src:/opt/nodecg/bundles/iss2-layouts/src:ro
       - ./shared:/opt/nodecg/bundles/iss2-layouts/shared:ro
+      - ./sound:/opt/nodecg/sound:ro
 
 volumes:
   nodecg_db:

@@ -4,7 +4,8 @@ USER root
 WORKDIR /opt/nodecg
 
 RUN nodecg install yagamuu/nodecg-speedcontrol --dev && \
-    nodecg install cma2819/nodecg-spotify-widget
+    nodecg install cma2819/nodecg-spotify-widget && \
+    nodecg install yagamuu/nodecg-timekeeper
 
 WORKDIR /opt/nodecg/bundles/nodecg-speedcontrol
 RUN npm run build

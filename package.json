@@ -81,9 +81,15 @@
     ],
     "graphics": [
       {
-        "file": "example.html",
+        "file": "pr.html",
         "width": 1920,
         "height": 1080
+      }
+    ],
+    "soundCues": [
+      {
+        "name": "pr-finish",
+        "defaultFile": "sound/pr-finish.mp3"
       }
     ]
   }
