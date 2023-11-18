@@ -23,8 +23,12 @@ const style = computed(() => {
 </script>
 
 <template>
-  <div id="container" :style="style">
-    <slot />
+  <div>
+    <div id="container" :style="style">
+      <div class="container-inner">
+        <slot />
+      </div>
+    </div>
     <TheFooter />
   </div>
 </template>

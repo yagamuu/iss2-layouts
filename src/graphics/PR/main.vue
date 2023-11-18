@@ -31,13 +31,11 @@ useHead({ title: 'PR' });
 
 <template>
   <BaseOverlay>
-    <div class="container-inner">
-      <img src="../images/pr_bg.png" class="main_image" />
-      <div class="information">
-        <img src="../images/pr-test.png" />
-        <!-- ↑ここの画像をpr画像として指定してください -->
-        <div class="time">{{ time }}</div>
-      </div>
+    <img src="../images/pr_bg.png" class="main_image" />
+    <div class="information">
+      <img src="../images/pr-test.png" />
+      <!-- ↑ここの画像をpr画像として指定してください -->
+      <div class="time">{{ time }}</div>
     </div>
   </BaseOverlay>
 </template>
