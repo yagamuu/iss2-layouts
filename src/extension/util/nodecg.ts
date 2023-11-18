@@ -1,4 +1,4 @@
-import { Configschema } from '@nodecg-vue-ts-template/types/schemas';
+import { Configschema } from '@iss2-layouts/types/schemas';
 import type NodeCG from '@nodecg/types';
 
 let nodecg: NodeCG.ServerAPI<Configschema>;

@@ -1,2 +1,6 @@
 export * from './configschema';
-export * from './exampleReplicant';
+export * from './displaySound';
+export * from './setupInformation';
+export * from './setupInformationArray';
+export * from './startSoon';
+export * from './externalTwitchAPIData';

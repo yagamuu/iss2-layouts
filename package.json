@@ -31,13 +31,17 @@
     "watch:extension": "tsc -b tsconfig.extension.json -w"
   },
   "dependencies": {
-    "module-alias": "^2.2.3"
+    "module-alias": "^2.2.3",
+    "needle": "^3.2.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@nodecg/types": "^2.1.11",
     "@quasar/extras": "^1.16.7",
     "@quasar/vite-plugin": "^1.5.0",
+    "@types/needle": "^3.2.2",
     "@types/node": "^18.18.3",
+    "@types/uuid": "^9.0.6",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "@unhead/vue": "^1.7.4",
@@ -63,11 +67,16 @@
   },
   "nodecg": {
     "compatibleRange": "^2.1.0",
+    "bundleDependencies": {
+      "nodecg-speedcontrol": "^2.5.0"
+    },
     "dashboardPanels": [
       {
-        "name": "example",
-        "title": "Example",
-        "file": "example.html"
+        "name": "displaySound",
+        "title": "Display Sound",
+        "file": "displaySound.html",
+        "width": 3,
+        "workspace": "ISS Settings"
       }
     ],
     "graphics": [
