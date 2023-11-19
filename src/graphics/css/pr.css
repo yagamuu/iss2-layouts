@@ -87,7 +87,7 @@
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  right: 15px;
+  right: 180px;
   bottom: 12px;
 }
 
@@ -284,7 +284,7 @@
 
 .main_image {
   position: absolute;
-  left: -4px;
+  left: 0px;
   top: 0px;
 }
 

@@ -1,6 +1,7 @@
 import { computed } from 'vue'
 import { RunDataActiveRun, RunDataActiveRunSurrounding, RunDataArray } from '../types/schemas/speedcontrol';
 import { useReplicant } from 'nodecg-vue-composable';
+import * as util from './util/format';
 
 export function useRunData() {
   const runDataActiveRun = useReplicant<RunDataActiveRun>('runDataActiveRun', 'nodecg-speedcontrol');
@@ -54,10 +55,25 @@ export function useRunData() {
     return startInArray;
   });
 
+  const runTitle = computed(() => runDataActiveRun?.data?.game ?? '');
+
+  const runCategory = computed(() => runDataActiveRun?.data?.category ?? '');
+
+  const runSystem = computed(() => runDataActiveRun?.data?.system ?? '');
+
+  const estimate = computed(() => {
+    const estimateS = runDataActiveRun?.data?.estimateS ?? 0;
+    return util.formatSeconds(estimateS);
+  });
+
   return {
     runDataActiveRun,
     players,
     upcomingRuns,
-    upcomingStartIn
+    upcomingStartIn,
+    runTitle,
+    runCategory,
+    runSystem,
+    estimate,
   }
 }
