@@ -1,24 +1,15 @@
 <script setup lang="ts">
-import { useReplicant } from 'nodecg-vue-composable';
-import { ref, computed, watchEffect } from 'vue';
-import { RunDataActiveRun } from '@iss2-layouts/types/schemas/speedcontrol/RunData';
-import { DisplaySound } from '@iss2-layouts/types/schemas/displaySound';
+import { ref, watchEffect } from 'vue';
+import { useRunData, useDisplaySound } from '@iss2-layouts/composable';
 import { useHead } from '@unhead/vue';
 
 // Set the title of this page.
 useHead({ title: 'Display Sound' });
 
-const runDataActiveRun = useReplicant<RunDataActiveRun>('runDataActiveRun', 'nodecg-speedcontrol');
-const displaySound = useReplicant<DisplaySound>('displaySound', 'iss2-layouts');
+const { players } = useRunData();
+const { displaySound } = useDisplaySound();
 
 const selected = ref(displaySound?.data?.playerId || 'null');
-const players = computed(() => {
-  if (!runDataActiveRun?.data) {
-    return [];
-  }
-
-  return runDataActiveRun?.data?.teams.flatMap((team) => team.players);
-});
 
 watchEffect(() => {
   selected.value = displaySound?.data?.playerId || '';

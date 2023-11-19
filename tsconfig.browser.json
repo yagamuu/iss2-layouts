@@ -112,6 +112,7 @@
     "src/dashboard/**/*.vue",
     "src/graphics/**/*.ts",
     "src/graphics/**/*.vue",
-    "src/types/**/*.d.ts"
+    "src/types/**/*.d.ts",
+    "src/composable/*.ts"
   ],
 }
