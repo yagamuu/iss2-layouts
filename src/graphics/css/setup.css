@@ -94,3 +94,23 @@
   font-family: "Noto Sans JP", sans-serif;
   margin-bottom: 50px;
 }
+
+.music {
+  background-color: rgba(250, 8, 126, 0.1);
+  border: rgb(250, 8, 126) 1px solid;
+  color: rgb(250, 8, 126);
+  position: absolute;
+  font-size: 21px;
+  font-family: "Sometype Mono", monospace;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  right: 20px;
+  bottom: 70px;
+}
+
+.music img {
+  margin-right: 10px;
+}

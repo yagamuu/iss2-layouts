@@ -1,17 +1,37 @@
 {
-  "_BaseOverlay.vue_vue_type_script_setup_true_lang-e137677c.js": {
-    "file": "assets/BaseOverlay.vue_vue_type_script_setup_true_lang-e137677c.js",
+  "TimerAndEstimate.css": {
+    "file": "assets/TimerAndEstimate-33e4b419.css",
+    "src": "TimerAndEstimate.css"
+  },
+  "_BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js": {
+    "file": "assets/BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js",
     "imports": [
-      "_index-d153b5e4.js"
+      "_index-094a2e7a.js"
     ]
   },
-  "_index-d153b5e4.js": {
-    "file": "assets/index-d153b5e4.js"
-  },
-  "_runData-9d784820.js": {
-    "file": "assets/runData-9d784820.js",
+  "_TimerAndEstimate-0c70c73f.js": {
+    "css": [
+      "assets/TimerAndEstimate-33e4b419.css"
+    ],
+    "file": "assets/TimerAndEstimate-0c70c73f.js",
     "imports": [
-      "_index-d153b5e4.js"
+      "_runData-c9b3d3c0.js",
+      "_index-094a2e7a.js"
+    ]
+  },
+  "_displaySound-ff47540e.js": {
+    "file": "assets/displaySound-ff47540e.js",
+    "imports": [
+      "_index-094a2e7a.js"
+    ]
+  },
+  "_index-094a2e7a.js": {
+    "file": "assets/index-094a2e7a.js"
+  },
+  "_runData-c9b3d3c0.js": {
+    "file": "assets/runData-c9b3d3c0.js",
+    "imports": [
+      "_index-094a2e7a.js"
     ]
   },
   "node_modules/@quasar/extras/material-icons/web-font/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff": {
@@ -74,13 +94,36 @@
     "css": [
       "assets/displaySound-d89ed9e3.css"
     ],
-    "file": "assets/displaySound-341eb604.js",
+    "file": "assets/displaySound-19796208.js",
     "imports": [
-      "_index-d153b5e4.js",
-      "_runData-9d784820.js"
+      "_index-094a2e7a.js",
+      "_runData-c9b3d3c0.js",
+      "_displaySound-ff47540e.js"
     ],
     "isEntry": true,
     "src": "src/dashboard/displaySound.ts"
+  },
+  "src/graphics/double.css": {
+    "file": "assets/double-a9802fe1.css",
+    "src": "src/graphics/double.css"
+  },
+  "src/graphics/double.ts": {
+    "assets": [
+      "assets/2p_16x9_bg-1477a833.png"
+    ],
+    "css": [
+      "assets/double-a9802fe1.css"
+    ],
+    "file": "assets/double-02f7c008.js",
+    "imports": [
+      "_index-094a2e7a.js",
+      "_TimerAndEstimate-0c70c73f.js",
+      "_BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js",
+      "_runData-c9b3d3c0.js",
+      "_displaySound-ff47540e.js"
+    ],
+    "isEntry": true,
+    "src": "src/graphics/double.ts"
   },
   "src/graphics/images/16x9_left1.png": {
     "file": "assets/16x9_left1-c470a597.png",
@@ -89,6 +132,10 @@
   "src/graphics/images/1p_16x9_bg.png": {
     "file": "assets/1p_16x9_bg-9637cf1a.png",
     "src": "src/graphics/images/1p_16x9_bg.png"
+  },
+  "src/graphics/images/2p_16x9_bg.png": {
+    "file": "assets/2p_16x9_bg-1477a833.png",
+    "src": "src/graphics/images/2p_16x9_bg.png"
   },
   "src/graphics/images/pr-test.png": {
     "file": "assets/pr-test-0770e569.png",
@@ -103,7 +150,7 @@
     "src": "src/graphics/images/setup_bg.png"
   },
   "src/graphics/pr.css": {
-    "file": "assets/pr-847832c2.css",
+    "file": "assets/pr-ac88fc18.css",
     "src": "src/graphics/pr.css"
   },
   "src/graphics/pr.ts": {
@@ -112,18 +159,18 @@
       "assets/pr-test-0770e569.png"
     ],
     "css": [
-      "assets/pr-847832c2.css"
+      "assets/pr-ac88fc18.css"
     ],
-    "file": "assets/pr-30d47673.js",
+    "file": "assets/pr-85b02752.js",
     "imports": [
-      "_index-d153b5e4.js",
-      "_BaseOverlay.vue_vue_type_script_setup_true_lang-e137677c.js"
+      "_index-094a2e7a.js",
+      "_BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js"
     ],
     "isEntry": true,
     "src": "src/graphics/pr.ts"
   },
   "src/graphics/setup.css": {
-    "file": "assets/setup-4c1760f4.css",
+    "file": "assets/setup-ddd3d4d3.css",
     "src": "src/graphics/setup.css"
   },
   "src/graphics/setup.ts": {
@@ -131,19 +178,19 @@
       "assets/setup_bg-8d8a1c06.png"
     ],
     "css": [
-      "assets/setup-4c1760f4.css"
+      "assets/setup-ddd3d4d3.css"
     ],
-    "file": "assets/setup-efefc604.js",
+    "file": "assets/setup-cc2128d7.js",
     "imports": [
-      "_index-d153b5e4.js",
-      "_runData-9d784820.js",
-      "_BaseOverlay.vue_vue_type_script_setup_true_lang-e137677c.js"
+      "_index-094a2e7a.js",
+      "_runData-c9b3d3c0.js",
+      "_BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js"
     ],
     "isEntry": true,
     "src": "src/graphics/setup.ts"
   },
   "src/graphics/single.css": {
-    "file": "assets/single-65604352.css",
+    "file": "assets/single-795b7bd3.css",
     "src": "src/graphics/single.css"
   },
   "src/graphics/single.ts": {
@@ -152,13 +199,14 @@
       "assets/1p_16x9_bg-9637cf1a.png"
     ],
     "css": [
-      "assets/single-65604352.css"
+      "assets/single-795b7bd3.css"
     ],
-    "file": "assets/single-0f5eb580.js",
+    "file": "assets/single-59a3a95d.js",
     "imports": [
-      "_index-d153b5e4.js",
-      "_BaseOverlay.vue_vue_type_script_setup_true_lang-e137677c.js",
-      "_runData-9d784820.js"
+      "_index-094a2e7a.js",
+      "_TimerAndEstimate-0c70c73f.js",
+      "_BaseOverlay.vue_vue_type_script_setup_true_lang-d57ee9db.js",
+      "_runData-c9b3d3c0.js"
     ],
     "isEntry": true,
     "src": "src/graphics/single.ts"

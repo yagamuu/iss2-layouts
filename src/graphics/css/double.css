@@ -1,5 +1,5 @@
 .container-inner {
-  background-color: #131e1b;
+  background-image: url("../images/2p_16x9_bg.png");
   overflow: hidden;
   font-family: "Noto Sans JP", sans-serif;
   font-family: "Sometype Mono", monospace;
@@ -8,6 +8,7 @@
   width: 1920px;
   height: 1080px;
 }
+
 .image-with-depth {
   height: 250px;
   perspective: 551px;
@@ -188,126 +189,11 @@
   top: calc(769px + 175px);
 }
 
-.informations {
-  position: absolute;
-  right: 20px;
-  top: 510px;
-  width: 930px;
-  color: #fff;
-}
-
-.title_1 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 42px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 35px;
-}
-
-.description_1 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 24px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 60px;
-}
-
-.time_2 {
-  color: rgb(250, 8, 126);
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 28px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 55px 0;
-  font-weight: bold;
-  position: absolute;
-  left: -191px;
-  width: 175px;
-  height: 84px;
-}
-
-.time_2 span {
-  font-size: 20px;
-}
-
-.title_2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 32px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 30px;
-}
-
-.description_2 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 50px;
-}
-
-.time_3 {
-  color: rgb(250, 8, 126);
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 28px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 55px 0;
-  font-weight: bold;
-  position: absolute;
-  left: -191px;
-  width: 175px;
-  height: 84px;
-}
-
-.time_3 span {
-  font-size: 20px;
-}
-
-.title_3 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 32px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 30px;
-}
-
-.description_3 {
-  width: 100%;
-  font-weight: bold;
-  font-size: 18px;
-  font-family: "Noto Sans JP", sans-serif;
-  margin-bottom: 30px;
-}
-
-.main_image {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.time {
-  color: rgb(250, 8, 126);
-  left: 1423px;
-  top: 823px;
-  height: 146px;
-  width: 427px;
-  position: absolute;
-  font-family: "Sometype Mono", monospace;
-  font-size: 96px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .complete {
   background-color: rgb(250, 8, 126);
   color: rgb(23, 29, 28);
 }
 
-.pause {
+.mistake {
   color: rgba(255, 255, 255, 0.4);
 }

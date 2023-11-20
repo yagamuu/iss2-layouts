@@ -1,10 +1,20 @@
 <script setup lang="ts">
 import { useTimekeeping } from '@iss2-layouts/composable';
-import { watch } from 'vue';
+import { watch, computed } from 'vue';
 import { useHead } from '@unhead/vue';
 import BaseOverlay from '../components/views/BaseOverlay.vue';
 
-const { time } = useTimekeeping();
+const { time, status } = useTimekeeping();
+
+const timerClass = computed(() => {
+  if (status.value === 'paused') {
+    return 'pause';
+  }
+  if (time.value === '00:00') {
+    return 'complete';
+  }
+  return '';
+});
 
 watch(time, (newTime, oldTime) => {
   if (newTime === '00:00' && oldTime !== '00:00') {
@@ -22,7 +32,7 @@ useHead({ title: 'PR' });
     <div class="information">
       <img src="../images/pr-test.png" />
       <!-- ↑ここの画像をpr画像として指定してください -->
-      <div class="time">{{ time }}</div>
+      <div :class="[timerClass, 'time']">{{ time }}</div>
     </div>
   </BaseOverlay>
 </template>

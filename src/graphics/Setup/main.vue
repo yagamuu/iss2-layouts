@@ -3,6 +3,7 @@ import { useHead } from '@unhead/vue';
 import { useRunData } from '@iss2-layouts/composable';
 import BaseOverlay from '../components/views/BaseOverlay.vue';
 import UpcomingSchedule from '../components/UpcomingSchedule.vue';
+import SpotifyTrack from '../components/SpotifyTrack.vue';
 
 const { upcomingRuns, upcomingStartIn } = useRunData();
 
@@ -21,6 +22,7 @@ useHead({ title: 'Setup' });
         :is-upnext="index === 0"
       />
     </div>
+    <SpotifyTrack/>
   </BaseOverlay>
 </template>
 

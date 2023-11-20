@@ -1,6 +1,7 @@
 import { computed } from 'vue'
 import { Timer } from '../types/schemas/speedcontrol';
 import { useReplicant } from 'nodecg-vue-composable';
+import { useRunData } from './runData';
 import * as util from './util/format';
 
 export function useTimer() {
@@ -19,11 +20,19 @@ export function useTimer() {
 
   const runState = computed(() => {
     if (!timer?.data) {
-      return 0;
+      return "stopped";
     }
 
-    const { state } = timer.data;
-    return state === 'finished' ? 'clear' : '';
+    const { runDataActiveRun } = useRunData();
+    if (runDataActiveRun?.data?.teams && runDataActiveRun?.data?.teams?.length === 1) { 
+      const teamId = runDataActiveRun?.data.teams[0].id;
+      const teamFinishTime = timer?.data?.teamFinishTimes[teamId];
+      if (teamFinishTime && teamFinishTime.state === "forfeit") { 
+        return "forfeit";
+      }
+    }
+
+    return timer.data.state;
   });
 
   return {

@@ -18,8 +18,11 @@ export function useTimekeeping() {
     return timekeeping.data.time.display;
   });
 
+  const status = computed(() => timekeeping?.data?.status || 'finished');
+
   return {
     timekeeping,
-    time
+    time,
+    status
   }
 }

@@ -5,6 +5,7 @@ import { useHead } from '@unhead/vue';
 import { Box, calculateClipPath } from '../util/clipPathCalculator';
 import BaseOverlay from '../components/views/BaseOverlay.vue';
 import InfoBox from '../components/InfoBox.vue';
+import TimerAndEstimate from '../components/TimerAndEstimate.vue';
 
 const gamePosition = (): Box[] => {
   const x = 530;
@@ -40,6 +41,7 @@ useHead({ title: 'Single' });
         />
         <div class="kirinuki0">
           <InfoBox/>
+          <TimerAndEstimate/>
         </div>
       </div>
     </div>

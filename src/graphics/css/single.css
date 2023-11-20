@@ -127,6 +127,7 @@
   position: absolute;
   bottom: 20px;
   padding: 0;
+  width: 100%;
 }
 
 .timer-left {
@@ -134,7 +135,6 @@
   font-family: "Sometype Mono", monospace;
   font-weight: bold;
   font-size: 54px;
-  width: 240px;
 }
 
 .timer-right {
@@ -155,4 +155,17 @@
   color: #fff;
   font-family: "Sometype Mono", monospace;
   font-size: 28px;
+}
+
+.complete {
+  background-color: rgb(250, 8, 126);
+  color: rgb(23, 29, 28);
+}
+
+.pause {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.forfeit {
+  color: rgba(255, 255, 255, 0.4) !important;
 }
