@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { useTimekeeping } from '@iss2-layouts/composable';
+import { useTimekeeping, usePrLayoutBg } from '@iss2-layouts/composable';
 import { watch, computed } from 'vue';
 import { useHead } from '@unhead/vue';
 import BaseOverlay from '../components/views/BaseOverlay.vue';
 
 const { time, status } = useTimekeeping();
+const { selectedPrLayoutBgUrl } = usePrLayoutBg();
 
 const timerClass = computed(() => {
   if (status.value === 'paused') {
@@ -30,8 +31,7 @@ useHead({ title: 'PR' });
   <BaseOverlay>
     <img src="../images/pr_bg.png" class="main_image" />
     <div class="information">
-      <img src="../images/pr-test.png" />
-      <!-- ↑ここの画像をpr画像として指定してください -->
+      <img :src="selectedPrLayoutBgUrl" />
       <div :class="[timerClass, 'time']">{{ time }}</div>
     </div>
   </BaseOverlay>

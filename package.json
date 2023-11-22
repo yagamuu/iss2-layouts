@@ -106,6 +106,17 @@
         "name": "pr-finish",
         "defaultFile": "sound/pr-finish.mp3"
       }
+    ],
+    "assetCategories": [
+      {
+        "name": "prLayoutBg",
+        "title": "PR Layout Background Image",
+        "allowedTypes": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      }
     ]
   }
 }
