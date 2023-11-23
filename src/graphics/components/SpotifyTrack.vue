@@ -7,7 +7,7 @@ const { trackName, artists } = useSpotifyPlayingTrack();
 
 <template>
   <div class="music">
-    <img src="../images/entypo_beamed-note.png" />
+    <img src="../images/entypo_beamed-note.svg" alt="音楽アイコン" />
     {{ trackName }} - {{ artists }}
   </div>
 </template>
