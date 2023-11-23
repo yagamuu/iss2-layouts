@@ -55,7 +55,6 @@ const timerStateClass = computed(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 140px;
 }
 
 .timer-top {
