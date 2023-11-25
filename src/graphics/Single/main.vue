@@ -37,7 +37,7 @@ useHead({ title: 'Single' });
       <div class="left_container">
         <img
           src="../images/16x9_left1.png"
-          style="width: 100%; height: 100%"
+          style="width: 100%; height: auto"
         />
         <div class="kirinuki0">
           <InfoBox/>
