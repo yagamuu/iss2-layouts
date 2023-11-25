@@ -22,6 +22,15 @@ if (!replicants_1.externalTwitchAPIData.value) {
         refreshToken: config.twitch.externalRefreshToken,
     };
 }
+(0, nodecg_1.get)().log.info(`Token: ${replicants_1.externalTwitchAPIData.value.accessToken}`);
+(0, nodecg_1.get)().log.info(`Client ID: ${config.twitch.externalClientID}`);
+// TODO: 応急処置
+if (replicants_1.externalTwitchAPIData.value.accessToken !== config.twitch.externalAccessToken) {
+    replicants_1.externalTwitchAPIData.value = {
+        accessToken: config.twitch.externalAccessToken,
+        refreshToken: config.twitch.externalRefreshToken,
+    };
+}
 /**
  * Refreshes the Twitch API access token, called whenever that is needed.
  */

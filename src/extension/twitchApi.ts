@@ -14,6 +14,17 @@ if (!externalTwitchAPIData.value) {
   };
 }
 
+nodecg().log.info(`Token: ${externalTwitchAPIData.value.accessToken}`);
+nodecg().log.info(`Client ID: ${config.twitch.externalClientID}`);
+
+// TODO: 応急処置
+if (externalTwitchAPIData.value.accessToken !== config.twitch.externalAccessToken) {
+  externalTwitchAPIData.value = {
+    accessToken: config.twitch.externalAccessToken,
+    refreshToken: config.twitch.externalRefreshToken,
+  };
+}
+
 /**
  * Refreshes the Twitch API access token, called whenever that is needed.
  */
