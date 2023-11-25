@@ -4,6 +4,8 @@ import { useReplicant } from 'nodecg-vue-composable';
 import { useRunData } from './runData';
 import * as util from './util/format';
 
+const { runDataActiveRun } = useRunData();
+
 export function useTimer() {
   const timer = useReplicant<Timer>(
     'timer',
@@ -23,7 +25,6 @@ export function useTimer() {
       return "stopped";
     }
 
-    const { runDataActiveRun } = useRunData();
     if (runDataActiveRun?.data?.teams && runDataActiveRun?.data?.teams?.length === 1) { 
       const teamId = runDataActiveRun?.data.teams[0].id;
       const teamFinishTime = timer?.data?.teamFinishTimes[teamId];
