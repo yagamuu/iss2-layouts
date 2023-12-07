@@ -15,3 +15,5 @@ docker compose up
 - [nodecg-spotify-widget](https://github.com/cma2819/nodecg-spotify-widget): NodeCG layout bundle for showing spotify information.
 - [Kajiro](https://twitter.com/jiro90000): Graphics design.
 - [bear](https://twitter.com/bearfaust0123): HTML/CSS coding.
+- [On-Jin ～音人～](https://on-jin.com/): PR time finish fx.
+    - Copyrighted material. Do not reproduce without permission.
